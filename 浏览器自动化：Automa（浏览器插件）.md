@@ -5,6 +5,7 @@
 3. 执行重复性任务：它能够自动执行日常的重复性操作，如定期检查网站、抓取数据等，从而节省用户的时间。
 4. 数据抓取：该工具能够智能识别并提取网页中的信息，支持导出为多种格式（如JSON和CSV），方便后续的数据分析和管理。
 5. 截图和记录工作流程：用户可以截取网页截图并记录操作流程，确保工作透明且可追溯。
+https://github.com/026-81192/notebooks/blob/main/assets/640-20250316102418-aa01zlf.png?raw=true
  ![图片]([assets/640-20250316102418-aa01zlf.png](assets/640-20250316102418-aa01zlf.png))
     ![图片]([assets/640-20250316102418-aa01zlf.png](https://github.com/026-81192/notebooks/assets/640-20250316102418-aa01zlf.png))
    ![图片]([assets/640-20250316102418-aa01zlf.png](https://github.com/026-81192/notebooks/blob/main/assets/640-20250316102418-aa01zlf.png))
