@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>三栏导航页</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"PingFang SC",sans-serif;background:#f5f7fa;color:#333}
+        header{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.05);padding:20px 0;text-align:center;margin-bottom:30px}
+        header h1{font-size:28px;font-weight:600}
+        .wrapper{max-width:1100px;margin:0 auto;padding:0 20px}
+        .flexbox{display:flex;gap:30px}
+        .column{flex:1}
+        .column h2{font-size:20px;margin-bottom:15px;padding-bottom:8px;border-bottom:2px solid #e1e4e8;color:#0366d6}
+        .item{display:block;background:#fff;border-radius:6px;padding:15px 20px;margin-bottom:12px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:transform .2s}
+        .item:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.12)}
+        .item .icon{font-size:22px;vertical-align:middle;margin-right:8px}
+        @media(max-width:768px){
+            .flexbox{flex-direction:column}
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>我的三栏导航</h1>
+</header>
+<div class="wrapper">
+    <div class="flexbox">
+        <!-- 导航类 -->
+        <div class="column">
+            <h2>导航类</h2>
+            <a class="item" href="https://www.google.com" target="_blank"><span class="icon">🔍</span>Google</a>
+            <a class="item" href="https://www.baidu.com" target="_blank"><span class="icon">🍥</span>百度</a>
+            <a class="item" href="https://cn.bing.com" target="_blank"><span class="icon">🌐</span>必应</a>
+            <a class="item" href="https://hao.360.com" target="_blank"><span class="icon">🧭</span>360导航</a>
+            <a class="item" href="https://daohang.qq.com" target="_blank"><span class="icon">🚀</span>QQ导航</a>
+        </div>
+
+        <!-- 知识分享 -->
+        <div class="column">
+            <h2>知识分享</h2>
+            <a class="item" href="https://www.zhihu.com" target="_blank"><span class="icon">❓</span>知乎</a>
+            <a class="item" href="https://segmentfault.com" target="_blank"><span class="icon">💬</span>SegmentFault</a>
+            <a class="item" href="https://juejin.cn" target="_blank"><span class="icon">✍️</span>掘金</a>
+            <a class="item" href="https://www.jianshu.com" target="_blank"><span class="icon">📚</span>简书</a>
+            <a class="item" href="https://blog.csdn.net" target="_blank"><span class="icon">🖥️</span>CSDN</a>
+        </div>
+
+        <!-- 综合类 -->
+        <div class="column">
+            <h2>综合类</h2>
+            <a class="item" href="https://www.bilibili.com" target="_blank"><span class="icon">📺</span>B站</a>
+            <a class="item" href="https://weibo.com" target="_blank"><span class="icon">📱</span>微博</a>
+            <a class="item" href="https://www.taobao.com" target="_blank"><span class="icon">🛒</span>淘宝</a>
+            <a class="item" href="https://mail.qq.com" target="_blank"><span class="icon">📧</span>QQ邮箱</a>
+            <a class="item" href="https://github.com" target="_blank"><span class="icon">💻</span>GitHub</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
