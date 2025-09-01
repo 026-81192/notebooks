@@ -1,61 +1,124 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>三栏导航页</title>
-    <style>
-        *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"PingFang SC",sans-serif;background:#f5f7fa;color:#333}
-        header{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.05);padding:20px 0;text-align:center;margin-bottom:30px}
-        header h1{font-size:28px;font-weight:600}
-        .wrapper{max-width:1100px;margin:0 auto;padding:0 20px}
-        .flexbox{display:flex;gap:30px}
-        .column{flex:1}
-        .column h2{font-size:20px;margin-bottom:15px;padding-bottom:8px;border-bottom:2px solid #e1e4e8;color:#0366d6}
-        .item{display:block;background:#fff;border-radius:6px;padding:15px 20px;margin-bottom:12px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:transform .2s}
-        .item:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.12)}
-        .item .icon{font-size:22px;vertical-align:middle;margin-right:8px}
-        @media(max-width:768px){
-            .flexbox{flex-direction:column}
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>三栏导航页</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#333}
+    header{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.05);padding:20px 0;text-align:center;margin-bottom:30px}
+    header h1{font-size:28px;font-weight:600}
+    .wrapper{max-width:1100px;margin:0 auto;padding:0 20px}
+    .flexbox{display:flex;gap:30px}
+    .column{flex:1}
+    .column h2{font-size:20px;margin-bottom:15px;padding-bottom:8px;border-bottom:2px solid #0366d6;color:#0366d6}
+    .item{background:#fff;border-radius:6px;padding:15px 20px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:transform .2s}
+    .item:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.12)}
+    .item a{display:block;text-decoration:none;color:#333;font-size:16px;font-weight:500;margin-bottom:8px}
+    .item .icon{font-size:22px;vertical-align:middle;margin-right:8px}
+    .tags{display:flex;flex-wrap:wrap;gap:6px}
+    .tag{background:#e1ecf4;color:#0366d6;font-size:12px;padding:2px 8px;border-radius:4px}
+    @media(max-width:768px){.flexbox{flex-direction:column}}
+  </style>
 </head>
 <body>
 <header>
-    <h1>我的三栏导航</h1>
+  <h1>三栏导航页</h1>
 </header>
+
 <div class="wrapper">
-    <div class="flexbox">
-        <!-- 导航类 -->
-        <div class="column">
-            <h2>导航类</h2>
-            <a class="item" href="https://www.google.com" target="_blank"><span class="icon">🔍</span>Google</a>
-            <a class="item" href="https://www.baidu.com" target="_blank"><span class="icon">🍥</span>百度</a>
-            <a class="item" href="https://cn.bing.com" target="_blank"><span class="icon">🌐</span>必应</a>
-            <a class="item" href="https://hao.360.com" target="_blank"><span class="icon">🧭</span>360导航</a>
-            <a class="item" href="https://daohang.qq.com" target="_blank"><span class="icon">🚀</span>QQ导航</a>
-        </div>
+  <div class="flexbox">
+    <!-- 导航类+常用网站 -->
+    <div class="column">
+      <h2>导航类+常用网站</h2>
 
-        <!-- 知识分享 -->
-        <div class="column">
-            <h2>知识分享</h2>
-            <a class="item" href="https://www.zhihu.com" target="_blank"><span class="icon">❓</span>知乎</a>
-            <a class="item" href="https://segmentfault.com" target="_blank"><span class="icon">💬</span>SegmentFault</a>
-            <a class="item" href="https://juejin.cn" target="_blank"><span class="icon">✍️</span>掘金</a>
-            <a class="item" href="https://www.jianshu.com" target="_blank"><span class="icon">📚</span>简书</a>
-            <a class="item" href="https://blog.csdn.net" target="_blank"><span class="icon">🖥️</span>CSDN</a>
-        </div>
+      <div class="item">
+        <a href="https://www.google.com" target="_blank"><span class="icon">🔍</span>Google</a>
+        <div class="tags"><span class="tag">搜索</span><span class="tag">全球</span><span class="tag">精准</span></div>
+      </div>
 
-        <!-- 综合类 -->
-        <div class="column">
-            <h2>综合类</h2>
-            <a class="item" href="https://www.bilibili.com" target="_blank"><span class="icon">📺</span>B站</a>
-            <a class="item" href="https://weibo.com" target="_blank"><span class="icon">📱</span>微博</a>
-            <a class="item" href="https://www.taobao.com" target="_blank"><span class="icon">🛒</span>淘宝</a>
-            <a class="item" href="https://mail.qq.com" target="_blank"><span class="icon">📧</span>QQ邮箱</a>
-            <a class="item" href="https://github.com" target="_blank"><span class="icon">💻</span>GitHub</a>
-        </div>
+      <div class="item">
+        <a href="https://www.baidu.com" target="_blank"><span class="icon">🍥</span>百度</a>
+        <div class="tags"><span class="tag">中文</span><span class="tag">百科</span><span class="tag">地图</span></div>
+      </div>
+
+      <div class="item">
+        <a href="https://www.bilibili.com" target="_blank"><span class="icon">📺</span>B站</a>
+        <div class="tags"><span class="tag">视频</span><span class="tag">弹幕</span><span class="tag">学习</span></div>
+      </div>
+
+      <div class="item">
+        <a href="https://weibo.com" target="_blank"><span class="icon">📱</span>微博</a>
+        <div class="tags"><span class="tag">热搜</span><span class="tag">资讯</span><span class="tag">社交</span></div>
+      </div>
+
+      <div class="item">
+        <a href="https://mail.qq.com" target="_blank"><span class="icon">📧</span>QQ邮箱</a>
+        <div class="tags"><span class="tag">收发</span><span class="tag">提醒</span><span class="tag">云附件</span></div>
+      </div>
     </div>
+
+    <!-- 综合知识汇总 -->
+    <div class="column">
+      <h2>综合知识汇总</h2>
+
+      <div class="item">
+        <a href="https://www.zhihu.com" target="_blank"><span class="icon">❓</span>知乎</a>
+        <div class="tags"><span class="tag">问答</span><span class="tag">深度</span><span class="tag">专栏</span></div>
+      </div>
+
+      <div class="item">
+        <a href="https://zh.wikipedia.org" target="_blank"><span class="icon">📚</span>维基百科</a>
+        <div class="tags"><span class="tag">权威</span><span class="tag">多语言</span><span class="tag">开放</span></div>
+      </div>
+
+      <div class="item">
+        <a href="https://www.runoob.com" target="_blank"><span class="icon">🖥️</span>菜鸟教程</a>
+        <div class="tags"><span class="tag">入门</span><span class="tag">示例</span><span class="tag">速查</span></div>
+      </div>
+
+      <div class="item">
+        <a href="https://book.douban.com" target="_blank"><span class="icon">📖</span>豆瓣读书</a>
+        <div class="tags"><span class="tag">书评</span><span class="tag">榜单</span><span class="tag">想读</span></div>
+      </div>
+
+      <div class="item">
+        <a href="https://arxiv.org" target="_blank"><span class="icon">📄</span>arXiv</a>
+        <div class="tags"><span class="tag">论文</span><span class="tag">预印本</span><span class="tag">学术</span></div>
+      </div>
+    </div>
+
+    <!-- 私人定制 -->
+    <div class="column">
+      <h2>私人定制</h2>
+
+      <div class="item">
+        <a href="https://www.notion.so" target="_blank"><span class="icon">📝</span>Notion</a>
+        <div class="tags"><span class="tag">笔记</span><span class="tag">协作</span><span class="tag">All-in-one</span></div>
+      </div>
+
+      <div class="item">
+        <a href="https://feedly.com" target="_blank"><span class="icon">📰</span>Feedly</a>
+        <div class="tags"><span class="tag">RSS</span><span class="tag">聚合</span><span class="tag">稍后读</span></div>
+      </div>
+
+      <div class="item">
+        <a href="https://raindrop.io" target="_blank"><span class="icon">🔖</span>Raindrop</a>
+        <div class="tags"><span class="tag">书签</span><span class="tag">多端</span><span class="tag">标签</span></div>
+      </div>
+
+      <div class="item">
+        <a href="https://www.figma.com" target="_blank"><span class="icon">🎨</span>Figma</a>
+        <div class="tags"><span class="tag">设计</span><span class="tag">原型</span><span class="tag">协作</span></div>
+      </div>
+
+      <div class="item">
+        <a href="https://github.com/settings/repositories" target="_blank"><span class="icon">⚙️</span>我的GitHub</a>
+        <div class="tags"><span class="tag">仓库</span><span class="tag">备份</span><span class="tag">版本</span></div>
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 </html>
